@@ -3,12 +3,19 @@ import {
   HashRouter,
   NavLink,
   Rotues,
-  Rotue
+  Rotue,
+  useNavigate
 } from 'react-router-dom';
 
 const Todo = () => {
-  return <p>這是 Todo 頁面 
-  </p>;
+let navigate = useNagivate();
+  return 
+  <>
+    <p>這是 Todo 頁面 </p>
+    <button onClick={()=>{
+    navigate('/login')
+    )}回到登入</button>
+  </>;
 };
 const Login = () => {
   return <p>這是登入頁面</p>;
